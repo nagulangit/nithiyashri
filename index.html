@@ -3,134 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nithiya Shri D - Profile</title>
+  <title>Nithiya Shri D - Professional Profile</title>
   <style>
+    /* Global Styles */
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #1e1e2f;
-      color: #f4f4f4;
+      background-color: #121212;
+      color: #e0e0e0;
       line-height: 1.6;
     }
+
     header {
-      text-align: center;
+      background-color: #1c1c1c;
       padding: 20px;
-      background-color: #29293d;
+      text-align: center;
+      border-bottom: 3px solid #6c63ff;
     }
+
     header h1 {
+      color: #6c63ff;
       margin: 0;
       font-size: 2.5em;
-      color: #ff6f61;
     }
-    header h2 {
-      margin: 10px 0 0;
-      font-size: 1.5em;
-      color: #9aa0b5;
+
+    header p {
+      font-size: 1.2em;
+      color: #cccccc;
     }
+
+    /* Main Section */
     .container {
-      max-width: 1200px;
-      margin: auto;
+      max-width: 900px;
+      margin: 30px auto;
       padding: 20px;
     }
-    .profile-img {
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #6c63ff;
+      font-size: 1.8em;
+      border-bottom: 2px solid #6c63ff;
+      padding-bottom: 5px;
+    }
+
+    /* Image Section */
+    .profile-image {
       display: block;
       margin: 20px auto;
       border-radius: 50%;
       width: 150px;
       height: 150px;
-      object-fit: cover;
-      border: 3px solid #ff6f61;
+      border: 3px solid #6c63ff;
     }
-    section {
-      margin-bottom: 40px;
-    }
-    section h3 {
-      font-size: 1.8em;
-      border-bottom: 2px solid #ff6f61;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      color: #ff6f61;
-    }
-    .contact, .skills, .education, .projects, .awards, .extra-curricular {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .contact p, .skills span, .education p, .projects p, .awards p, .extra-curricular p {
-      margin: 0;
+
+    /* Lists */
+    ul {
+      list-style: none;
       padding: 0;
-      font-size: 1em;
     }
-    .skills span {
-      display: inline-block;
-      background-color: #ff6f61;
-      color: #fff;
-      padding: 5px 10px;
-      margin: 5px 0;
-      border-radius: 5px;
+
+    ul li {
+      margin-bottom: 10px;
     }
+
+    /* Footer */
     footer {
+      background-color: #1c1c1c;
+      padding: 10px;
       text-align: center;
-      padding: 10px 0;
-      background-color: #29293d;
-      color: #9aa0b5;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      color: #6c63ff;
+    }
+
+    /* Links */
+    a {
+      color: #6c63ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      section h2 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Nithiya Shri D</h1>
-    <h2>Ambitious Engineering Graduate</h2>
+    <p>An Ambitious Engineering Graduate</p>
   </header>
+
   <div class="container">
-    <img src="IMG_20220407_215704.jpg" alt="Nithiya Shri D" class="profile-img">
-    <section class="contact">
-      <h3>Contact</h3>
-      <p>📞 8124212886</p>
-      <p>✉️ nithiyashri2223@gmail.com</p>
-      <p>📍 40 Shathi Nagar, Chinnavedampatti, Coimbatore - 641049</p>
+    <!-- Profile Section -->
+    <section>
+      <img src="IMG_20220407_215704.jpg" alt="Profile Picture" class="profile-image">
+      <p>
+        <strong>Address:</strong> 40 Shathi Nagar, Chinnavedampatti, Coimbatore - 641049 <br>
+        <strong>Email:</strong> <a href="mailto:nithiyashri2223@gmail.com">nithiyashri2223@gmail.com</a> <br>
+        <strong>Phone:</strong> 8124212886
+      </p>
     </section>
-    <section class="skills">
-      <h3>Skills</h3>
-      <span>Leadership Qualities</span>
-      <span>Communication</span>
-      <span>Problem Solving</span>
-      <span>Team Player</span>
+
+    <!-- Education Section -->
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>BE Electronics and Communication Engineering - CGPA 9.19 (2022, Coimbatore Institute of Technology)</li>
+        <li>Higher Secondary - 91.6% (2019, GKD Matriculation Higher Secondary School)</li>
+        <li>SSLC - 96.4% (2017, GSR Matriculation Higher Secondary School)</li>
+      </ul>
     </section>
-    <section class="education">
-      <h3>Education</h3>
-      <p>🎓 BE Electronics and Communication Engineering - CGPA 9.19</p>
-      <p>2022 | Coimbatore Institute of Technology</p>
-      <p>🎓 Higher Secondary - 91.6%</p>
-      <p>2019 | GKD Matriculation Higher Secondary School</p>
-      <p>🎓 SSLC - 96.4%</p>
-      <p>2017 | GSR Matriculation Higher Secondary School</p>
+
+    <!-- Skills Section -->
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Leadership Qualities</li>
+        <li>Communication</li>
+        <li>Problem Solving</li>
+        <li>Team Player</li>
+      </ul>
     </section>
-    <section class="projects">
-      <h3>Projects</h3>
-      <p>📌 <strong>Intelligent Stove with Age Verification and Gas Detection</strong></p>
-      <p>Designed a stove with age verification and gas detection modules for safety purposes.</p>
+
+    <!-- Projects Section -->
+    <section>
+      <h2>Projects</h2>
+      <p>
+        <strong>Intelligent Stove with Age Verification and Gas Detection:</strong>
+        Designed a stove with safety modules for age verification and gas detection.
+      </p>
     </section>
-    <section class="awards">
-      <h3>Awards</h3>
-      <p>🏆 Third place in Inter-State Level Yoga Competition</p>
+
+    <!-- Awards Section -->
+    <section>
+      <h2>Awards</h2>
+      <ul>
+        <li>Third in Inter-state Level Yoga Competition</li>
+        <li>Inter-state Throw Ball Player</li>
+      </ul>
     </section>
-    <section class="extra-curricular">
-      <h3>Extra-Curricular Activities</h3>
-      <p>🎖️ Inter-State Throw Ball Player</p>
-    </section>
-    <section class="programming-languages">
-      <h3>Programming Languages</h3>
-      <p>🔹 Basics of C, C++</p>
-      <p>🔹 Basics of Java</p>
-      <p>🔹 Basics of Python</p>
+
+    <!-- Languages Section -->
+    <section>
+      <h2>Languages Known</h2>
+      <ul>
+        <li>Tamil</li>
+        <li>English</li>
+      </ul>
     </section>
   </div>
+
   <footer>
-    &copy; 2024 Nithiya Shri D - Profile Page
+    <p>&copy; 2024 Nithiya Shri D | All Rights Reserved</p>
   </footer>
 </body>
 </html>
