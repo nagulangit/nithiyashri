@@ -9,64 +9,65 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
       line-height: 1.6;
     }
 
     header {
-      background-color: #1c1c1c;
-      padding: 20px;
+      background-color: #6c63ff;
+      color: white;
+      padding: 20px 0;
       text-align: center;
-      border-bottom: 3px solid #6c63ff;
+      border-bottom: 4px solid #4b47c1;
     }
 
     header h1 {
-      color: #6c63ff;
-      margin: 0;
       font-size: 2.5em;
+      margin: 0;
+      font-weight: bold;
     }
 
     header p {
       font-size: 1.2em;
-      color: #cccccc;
+      margin-top: 10px;
+      color: #e0e0ff;
     }
 
     /* Main Section */
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 30px auto;
       padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     }
 
     section {
-      margin-bottom: 40px;
-      padding: 20px;
-      background: #1e1e1e;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
     }
 
     section h2 {
-      margin-bottom: 15px;
-      color: #6c63ff;
       font-size: 1.8em;
-      border-bottom: 2px solid #6c63ff;
-      padding-bottom: 5px;
+      color: #6c63ff;
+      margin-bottom: 15px;
+      border-left: 5px solid #6c63ff;
+      padding-left: 10px;
     }
 
-    /* Image Section */
+    /* Profile Image */
     .profile-image {
       display: block;
       margin: 20px auto;
       border-radius: 50%;
       width: 150px;
       height: 150px;
-      border: 3px solid #6c63ff;
+      border: 4px solid #6c63ff;
     }
 
-    /* Lists */
+    /* Content Styling */
     ul {
       list-style: none;
       padding: 0;
@@ -76,15 +77,6 @@
       margin-bottom: 10px;
     }
 
-    /* Footer */
-    footer {
-      background-color: #1c1c1c;
-      padding: 10px;
-      text-align: center;
-      color: #6c63ff;
-    }
-
-    /* Links */
     a {
       color: #6c63ff;
       text-decoration: none;
@@ -92,6 +84,39 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    /* Buttons */
+    .contact-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #6c63ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .contact-btn:hover {
+      background-color: #4b47c1;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background-color: #6c63ff;
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
     }
 
     /* Responsive Design */
@@ -109,7 +134,7 @@
 <body>
   <header>
     <h1>Nithiya Shri D</h1>
-    <p>An Ambitious Engineering Graduate</p>
+    <p>Ambitious Engineering Graduate</p>
   </header>
 
   <div class="container">
@@ -117,8 +142,8 @@
     <section>
       <img src="IMG_20220407_215704.jpg" alt="Profile Picture" class="profile-image">
       <p>
-        <strong>Address:</strong> 40 Shathi Nagar, Chinnavedampatti, Coimbatore - 641049 <br>
-        <strong>Email:</strong> <a href="mailto:nithiyashri2223@gmail.com">nithiyashri2223@gmail.com</a> <br>
+        <strong>Address:</strong> 40 Shathi Nagar, Chinnavedampatti, Coimbatore - 641049<br>
+        <strong>Email:</strong> <a href="mailto:nithiyashri2223@gmail.com">nithiyashri2223@gmail.com</a><br>
         <strong>Phone:</strong> 8124212886
       </p>
     </section>
@@ -127,9 +152,9 @@
     <section>
       <h2>Education</h2>
       <ul>
-        <li>BE Electronics and Communication Engineering - CGPA 9.19 (2022, Coimbatore Institute of Technology)</li>
-        <li>Higher Secondary - 91.6% (2019, GKD Matriculation Higher Secondary School)</li>
-        <li>SSLC - 96.4% (2017, GSR Matriculation Higher Secondary School)</li>
+        <li><strong>BE Electronics and Communication Engineering:</strong> CGPA 9.19 (2022, Coimbatore Institute of Technology)</li>
+        <li><strong>Higher Secondary:</strong> 91.6% (2019, GKD Matriculation Higher Secondary School)</li>
+        <li><strong>SSLC:</strong> 96.4% (2017, GSR Matriculation Higher Secondary School)</li>
       </ul>
     </section>
 
@@ -170,6 +195,8 @@
         <li>English</li>
       </ul>
     </section>
+
+    <a href="mailto:nithiyashri2223@gmail.com" class="contact-btn">Contact Me</a>
   </div>
 
   <footer>
